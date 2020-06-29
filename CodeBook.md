@@ -13,13 +13,21 @@ Unzip the data.
 Create the following tables by read.tables the .txt files from the data:
 
     - features = features.txt with columns "n", "functions"
+    This is the names of the various measurements taken from the sensors.
     - activities = activity_lables.txt with columns "code", "activity"
+    This is the code and name of the activities measured.
     - subject_test = test/subject_test.txt with column "subject"
+    This is the numbers assigned to individual subjects for the test data.
     - x_test = test/X_test.txt with column features$functions
+    This is the raw data measurements from the test data with column names as the types of measurments.
     - y_test = test/y_test.txt with column "code"
+    This is the code associated with the activity from the test data.
     - subject_train = train/subject_train.txt with column "subject"
+    This is the numbers assigned to individual subjects for the training data.
     - x_train = train/X_train.txt with colunm features$functions
+    This is the raw data measurements from the train data with the column names as the types of measurements.
     - y_train = train/y_train.txt with column "code"
+    This is the code associated with the activity from the train data.
 
 Combine the train and test tables for x, y, and subject using rbind forming new tables x, y, and subject _all.
 
